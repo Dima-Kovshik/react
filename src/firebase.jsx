@@ -1,5 +1,7 @@
+
 import firebase from "firebase/compat";
 import "firebase/firestore";
+import "firebase/auth"
 
 
 const firebaseConfig = {
@@ -9,9 +11,10 @@ const firebaseConfig = {
   storageBucket: "react-working.appspot.com",
   messagingSenderId: "1024768483114",
   appId: "1:1024768483114:web:f25eea0801dc6293850853",
-  measurementId: "${config.measurementId}"
+  measurementId: "${config.measurementId}",
 };
 
 firebase.initializeApp(firebaseConfig);
+
 
 export default firebase;
